@@ -20,9 +20,19 @@ public class MainManager : MonoBehaviour
 
     public static MainManager instance;
 
+    public string playerName;
+    private void Awake()
+    {
+        if(instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
 
-    
     // Start is called before the first frame update
     void Start()
     {
