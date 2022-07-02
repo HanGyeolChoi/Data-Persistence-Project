@@ -19,7 +19,7 @@ public class StartButton : MonoBehaviour
     // Update is called once per frame
     void StartGame()
     {
-        MainManager.instance.playerName = playerName.text;
+        PlayerManager.instance.playerName = playerName.text;
         SceneManager.LoadScene(0);
     }
 }
