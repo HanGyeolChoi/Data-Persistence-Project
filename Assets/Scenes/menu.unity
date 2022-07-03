@@ -223,11 +223,66 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &460081036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4349053585549858634, guid: 189a5432bd0f1774da7a684aed905c16, type: 3}
+  m_PrefabInstance: {fileID: 1630395086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &593875438 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4349053585258194390, guid: 189a5432bd0f1774da7a684aed905c16, type: 3}
   m_PrefabInstance: {fileID: 1630395086}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &715892991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 715892993}
+  - component: {fileID: 715892992}
+  m_Layer: 0
+  m_Name: Player Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &715892992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715892991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cac092c645d62947af0d6272aa6d27d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: 
+--- !u!4 &715892993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715892991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 320, y: 240, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320891624
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4349053586563490388, guid: 189a5432bd0f1774da7a684aed905c16, type: 3}
+      propertyPath: playerName
+      value: 
+      objectReference: {fileID: 460081036}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 189a5432bd0f1774da7a684aed905c16, type: 3}
 --- !u!1 &1648036618
